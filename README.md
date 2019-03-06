@@ -12,7 +12,7 @@ Faceswap 是一个通过深度学习来识别和替换图片和视频中人物�
 
 在开始前请先查阅[INSTALL.md](INSTALL.md)。
 
-- [声明](#manifesto)
+- [声明](#声明)
 - [如何安装运行项目](#how-to-setup-and-run-the-project)
   - [Overview](#overview)
   - [Extract](#extract)
@@ -211,33 +211,55 @@ Responsible for consolidating the converters, adding a lot of code to fix model 
  - Check issues with the 'advuser' tag
  - Also go to the 'faceswap-playground' repo and help others.
 
+### 写给终端用户
+ - 有能力的话尽量折腾下代码
+ - 你同样可以去'faceswap-playground'求助或帮助他人
+ - 更加耐心，这是一个对开发者来说都相当新的技术。为了让普通用户能更加易用已经加了相当多的功能，仍需要更多时间来完善
+ - **Notice** 任何关于运行代码的疑杂都得投稿在'faceswap-playground' 项目中
 ### For end-users
  - Get the code here and play with it if you can
  - You can also go to the 'faceswap-playground' repo and help or get help from others.
  - Be patient. This is relatively new technology for developers as well. Much effort is already being put into making this program easy to use for the average user. It just takes time!
  - **Notice** Any issue related to running the code has to be open in the 'faceswap-playground' project!
 
-### For haters
-Sorry, no time for that.
+### 写给讨厌此项目的人们
+没空
 
-# About github.com/deepfakes
+# 关于 github.com/deepfakes
 
+## 这个仓库是什么
+它是一个聚集活跃用户的社区仓库
 ## What is this repo?
 It is a community repository for active users.
 
+## 而又为什么是这个仓库呢？
+joshua-wu repo没什么反应了。简单的像urls前缺少 _http://_ 很久了都没解决。
 ## Why this repo?
 The joshua-wu repo seems not active. Simple bugs like missing _http://_ in front of urls have not been solved since days.
 
+## 如果它不是/u/deepfakes为什么又命名为‘deepfakes’
+ 1. 因为项目增长迟早会发生类似名字的事
+ 2. 因为我们想结识原作者
+ 3. 因为这个名字更容易团聚贡献者和用户
 ## Why is it named 'deepfakes' if it is not /u/deepfakes?
  1. Because a typosquat would have happened sooner or later as project grows
  2. Because we wanted to recognize the original author
  3. Because it will better federate contributors and users
 
+## 如果/u/deepfakes不愿意？
+这是一个友好意向的相似命名，并且完全献给项目本身。如果/u/deepfakes想要接管和驱动这项目，我们很欢迎他来（提个issue，我们会在Reddit上联系他）。请不要因为你发现这边代码的问题而给/u/deepfakes发消息。
 ## What if /u/deepfakes feels bad about that?
 This is a friendly typosquat, and it is fully dedicated to the project. If /u/deepfakes wants to take over this repo/user and drive the project, he is welcomed to do so (Raise an issue, and he will be contacted on Reddit). Please do not send /u/deepfakes messages for help with the code you find here.
 
+# 关于机器学习
 # About machine learning
 
+## 计算机是如何知道怎样识别脸孔？机器学习是什么原理？神经网络又是什么？
+这些很复杂。下面有一个视频可以让这些过程易懂一些。（PS. Youtube，翻墙指定）
+[![How Machines Learn](https://img.youtube.com/vi/R9OHn5ZF4Uo/0.jpg)](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
+
+下面这个视频略微深入，尝试解释神经网络的功能
+[![How Machines Learn](https://img.youtube.com/vi/aircAruvnKk/0.jpg)](https://www.youtube.com/watch?v=aircAruvnKk)
 ## How does a computer know how to recognise/shape a faces? How does machine learning work? What is a neural network?
 It's complicated. Here's a good video that makes the process understandable:
 [![How Machines Learn](https://img.youtube.com/vi/R9OHn5ZF4Uo/0.jpg)](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
