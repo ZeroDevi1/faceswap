@@ -12,7 +12,7 @@ Faceswap 是一个通过深度学习来识别和替换图片和视频中人物�
 在开始前请先查阅[INSTALL.md](INSTALL.md)。
 
 - [声明](#声明)
-- [如何安装运行项目](#how-to-setup-and-run-the-project)
+- [如何安装运行项目](#如何安装和运行项目)
   - [总览](#总览)
   - [解析](#解析)
   - [训练](#训练)
@@ -32,13 +32,13 @@ Faceswap 是一个通过深度学习来识别和替换图片和视频中人物�
   - [对于非开发者的进阶用户](#对于非开发者的进阶用户)
   - [对于终端用户](#对于终端用户)
   - [对于讨厌此项目的人们](#对于讨厌此项目的人们)
-- [关于 github.com/deepfakes](#about-githubcomdeepfakes)
+- [关于 github.com/deepfakes](#关于-github.com/deepfakes)
   - [这个仓库是什么](#这个仓库是什么)
   - [而又为什么是这个仓库呢](#而又为什么是这个仓库呢)
-  - [Why is it named 'deepfakes' if it is not /u/deepfakes?](#why-is-it-named-deepfakes-if-it-is-not-udeepfakes)
-  - [What if /u/deepfakes feels bad about that?](#what-if-udeepfakes-feels-bad-about-that)
-- [About machine learning](#about-machine-learning)
-  - [How does a computer know how to recognise/shape a faces? How does machine learning work? What is a neural network?](#how-does-a-computer-know-how-to-recogniseshape-a-faces-how-does-machine-learning-work-what-is-a-neural-network)
+  - [如果它不是/u/deepfakes为什么又命名为'deepfakes'](#如果它不是/u/deepfakes为什么又命名为'deepfakes')
+  - [如果/u/deepfakes不愿意](#如果/u/deepfakes不愿意)
+- [关于机器学习](#关于机器学习)
+  - [计算机是如何知道怎样识别脸孔？机器学习是什么原理？神经网络又是什么?](#计算机是如何知道怎样识别脸孔？机器学习是什么原理？神经网络又是什么？)
 
 ---
 ## 声明
@@ -162,21 +162,22 @@ Unbalanced and OHR models的创建者，以及为模型训练扩展了许多功�
 ## 而又为什么是这个仓库呢
 joshua-wu repo没什么反应了。简单的像urls前缺少 _http://_ 很久了都没解决。
 
-## 如果它不是/u/deepfakes为什么又命名为‘deepfakes’
+## 如果它不是/u/deepfakes为什么又命名为'deepfakes'
  1. 因为项目增长迟早会发生类似名字的事
  2. 因为我们想结识原作者
  3. 因为这个名字更容易团聚贡献者和用户
 
-## 如果/u/deepfakes不愿意？
+## 如果/u/deepfakes不愿意
 这是一个友好意向的相似命名，并且完全献给项目本身。如果/u/deepfakes想要接管和驱动这项目，我们很欢迎他来（提个issue，我们会在Reddit上联系他）。请不要因为你发现这边代码的问题而给/u/deepfakes发消息。
 
 # 关于机器学习
 
 ## 计算机是如何知道怎样识别脸孔？机器学习是什么原理？神经网络又是什么？
 这些很复杂。下面有一个视频可以让这些过程易懂一些。（PS. Youtube，翻墙指定）
+
 [![How Machines Learn](https://img.youtube.com/vi/R9OHn5ZF4Uo/0.jpg)](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
 
 下面这个视频略微深入，尝试解释神经网络的功能:
+
 [![How Machines Learn](https://img.youtube.com/vi/aircAruvnKk/0.jpg)](https://www.youtube.com/watch?v=aircAruvnKk)
 
-tl;dr: training data + trial and error
