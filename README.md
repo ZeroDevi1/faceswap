@@ -1,4 +1,3 @@
-**Notice:** This repository is not operated or maintained by /u/deepfakes. Please read the explanation below for details.
 **Notice:** 此代码不由 /u/deepfakes 维护。请阅读以下解释说明获取更多信息。
 # deepfakes_faceswap
 
@@ -14,28 +13,28 @@ Faceswap 是一个通过深度学习来识别和替换图片和视频中人物�
 
 - [声明](#声明)
 - [如何安装运行项目](#how-to-setup-and-run-the-project)
-  - [Overview](#overview)
-  - [Extract](#extract)
-  - [Train](#train)
-  - [Convert](#convert)
+  - [总览](#总览)
+  - [解析](#解析)
+  - [训练](#训练)
+  - [转化](#转化)
   - [GUI](#gui)
-  - [General notes:](#general-notes)
-- [Help I need support!](#help-i-need-support)
-  - [Discord Server](#discord-server)
-  - [Faceswap-Playground](#faceswap-playground)
-- [Donate](#donate)
+  - [常识:](#常识)
+- [当你需要帮助支持](#当你需要帮助支持)
+  - [论坛](#论坛)
+  - [Faceswap 闲谈区](#Faceswap-闲谈区)
+- [捐献](#捐献)
   - [@torzdf](#@torzdf)
   - [@andenixa](#andenixa)
   - [@kvrooman](#@kvrooman)
-- [How to contribute](#how-to-contribute)
-  - [For people interested in the generative models](#for-people-interested-in-the-generative-models)
-  - [For devs](#for-devs)
-  - [For non-dev advanced users](#for-non-dev-advanced-users)
-  - [For end-users](#for-end-users)
-  - [For haters](#for-haters)
-- [About github.com/deepfakes](#about-githubcomdeepfakes)
-  - [What is this repo?](#what-is-this-repo)
-  - [Why this repo?](#why-this-repo)
+- [如何参与贡献](#如何参与贡献)
+  - [对创建模型感兴趣的人](#对创建模型感兴趣的人)
+  - [对于开发者](#对于开发者)
+  - [对于非开发者的进阶用户](#对于非开发者的进阶用户)
+  - [对于终端用户](#对于终端用户)
+  - [对于讨厌此项目的人们](#对于讨厌此项目的人们)
+- [关于 github.com/deepfakes](#about-githubcomdeepfakes)
+  - [这个仓库是什么](#这个仓库是什么)
+  - [而又为什么是这个仓库呢](#而又为什么是这个仓库呢)
   - [Why is it named 'deepfakes' if it is not /u/deepfakes?](#why-is-it-named-deepfakes-if-it-is-not-udeepfakes)
   - [What if /u/deepfakes feels bad about that?](#what-if-udeepfakes-feels-bad-about-that)
 - [About machine learning](#about-machine-learning)
@@ -52,7 +51,7 @@ When faceswaping using an AI was first developed and became published, the techn
 “Deepfakes”的出现改变了这一切，让任何人都可以参与AI的开发。对于开发者，这些代码开启了一个非常棒的学习机会。可以出点子，也可以和大牛共同开发，为这项新兴技术做出贡献，随着技术的发展，最终这项技术将应用与各个主流场景。
 "Deepfakes" changed all that and anyone could participate in AI development. To us developers, the release of this code has opened up a fantastic learning opportunity. To build on ideas developed by others, to collaborate with coders with a huge variety of skills, to experiment with AI whilst learning new skills and ultimately contribute towards an emerging technology which will only see more mainstream use as it progresses.
 
-是否有人在用相似的软件做一些糟糕的事情？显然，也正因为如此，开发者们开始遵循严格的道德标准。我们中的很多人甚至都没用此软件创建过视频，我们只是在修补代码看看它能做些什么。可惜，媒体只关注这软件的黑暗面。它可以作恶并不是我们创造它的目的，刀可以做菜也可以杀人（我加的，老外讲的有点啰嗦），让我们更加的关注这款软件的未来，我们的愿景是希望这款软件作为一个学习试验的工具让更多的开发者参与。
+是否有人在用相似的软件做一些糟糕的事情？显然，也正因为如此，开发者们开始遵循严格的道德标准。我们中的很多人甚至都没用此软件创建过视频，我们只是在修补代码看看它能做些什么。可惜，媒体只关注这软件的黑暗面。它可以作恶并不是我们创造它的目的，武器可以杀人也可以保护他人（老外讲的有点啰嗦），让我们更加的关注这款软件的未来，我们的愿景是希望这款软件作为一个学习试验的工具让更多的开发者参与。
 Are there some out there doing horrible things with similar software? Yes. And because of this, the developers have been following strict ethical standards. Many of us don't even use it to create videos at all, we just tinker with the code to see what it all does. Sadly, the media concentrates only on the unethical uses of this software. That is unfortunately a nature of how it was first exposed to the public, but it is not representative of why it was created, how we use it now, or what we see in its future. Like any technology, it can be used for good or it can be abused. It is our intention to develop faceswap in a way that its potential for abuse is minimized whilst maximizing its potential as a tool for learning, experimenting and, yes, for legitimate faceswaping.
 
 我们不是在诽谤或妖魔化某些组织或个体。我们是程序员，工程师，好莱坞视觉特效师，我们激情，我们热爱，我们都是鲜活的人。我们觉得是时出台一个标准声明来定义此款软件的可为和不可为。
@@ -67,7 +66,7 @@ We are not trying to denigrate celebrities or to demean anyone. We are programme
 - Faceswap is not for any illicit, unethical, or questionable purposes.
 - Faceswap exists to experiment and discover AI techniques, for social or political commentary, for movies, and for any number of ethical and reasonable uses.
 
-面对此软件现在被各种不道德的使用的事实，我们非常的困扰。尽管如此，我们依然愿意在教育，学习，ai技术，工具方面有兴趣的人给予支持。同时我们将对非法及非道德的使用持零容忍态度。同时也将极力阻止此类应用扩散。
+面对此软件现在被各种不道德的使用的事实，我们非常的困扰。尽管如此，我们依然愿意在教育，学习，ai技术，工具方面有兴趣的人给予支持。同时我们将对非法及非道德的使用持零容忍态度，同时也将极力阻止此类应用扩散。
 We are very troubled by the fact that faceswap can be used for unethical and disreputable things. However, we support the development of tools and techniques that can be used ethically as well as provide education and experience in AI for anyone who wants to learn it hands-on. We will take a zero tolerance approach to anyone using this software for any unethical purposes and will actively discourage any such uses.
 
 ## 如何安装和运行项目
@@ -181,7 +180,7 @@ Responsible for consolidating the converters, adding a lot of code to fix model 
 ### For people interested in the generative models
  - Go to the 'faceswap-model' to discuss/suggest/commit alternatives to the current algorithm.
 
-### 写给开发者
+### 对于开发者
  - 读完整个README
  - Fork the repo
  - 下载上面链接里提供的数据
@@ -196,7 +195,7 @@ Responsible for consolidating the converters, adding a lot of code to fix model 
  - Check issues with the 'dev' tag
  - For devs more interested in computer vision and openCV, look at issues with the 'opencv' tag. Also feel free to add your own alternatives/improvments
 
-### 写给非开发者的进阶用户
+### 对于非开发者的进阶用户
  - 读完整个README
  - Clone the repo
  - 下载上面链接里提供的数据
@@ -211,7 +210,7 @@ Responsible for consolidating the converters, adding a lot of code to fix model 
  - Check issues with the 'advuser' tag
  - Also go to the 'faceswap-playground' repo and help others.
 
-### 写给终端用户
+### 对于终端用户
  - 有能力的话尽量折腾下代码
  - 你同样可以去'faceswap-playground'求助或帮助他人
  - 更加耐心，这是一个对开发者来说都相当新的技术。为了让普通用户能更加易用已经加了相当多的功能，仍需要更多时间来完善
@@ -222,7 +221,7 @@ Responsible for consolidating the converters, adding a lot of code to fix model 
  - Be patient. This is relatively new technology for developers as well. Much effort is already being put into making this program easy to use for the average user. It just takes time!
  - **Notice** Any issue related to running the code has to be open in the 'faceswap-playground' project!
 
-### 写给讨厌此项目的人们
+### 对于讨厌此项目的人们
 没空
 
 # 关于 github.com/deepfakes
@@ -232,7 +231,7 @@ Responsible for consolidating the converters, adding a lot of code to fix model 
 ## What is this repo?
 It is a community repository for active users.
 
-## 而又为什么是这个仓库呢？
+## 而又为什么是这个仓库呢
 joshua-wu repo没什么反应了。简单的像urls前缺少 _http://_ 很久了都没解决。
 ## Why this repo?
 The joshua-wu repo seems not active. Simple bugs like missing _http://_ in front of urls have not been solved since days.
